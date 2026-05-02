@@ -96,7 +96,7 @@ class QRScannerViewModel: NSObject, ObservableObject {
     }
     
     func resetScan() {
-        isScanning = false
+        scannedResult = nil
     }
     
     func stopSession() {

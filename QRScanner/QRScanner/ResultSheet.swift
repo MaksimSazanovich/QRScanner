@@ -3,8 +3,8 @@
 import SwiftUI
 
 struct ResultSheet: View {
-    let result: QRResult = .url(URL(string: "https://example.com")!)
-    var onReset: () -> Void = {}
+    let result: QRResult
+    var onReset: () -> Void
     
     @State private var appeared = false
     @State private var copied  = false
@@ -178,8 +178,4 @@ struct ResultSheet: View {
         case .text: return .purple
         }
     }
-}
-
-#Preview {
-    ResultSheet()
 }
